@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+    }
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f4f4f9;
+      }
+      .container{
+        width: 90%;
+        max-width: 1200px;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        
+      }
+      /* header  */
+      .header{
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+      }
+      /* main content area  */
+      .main-content{
+        display: flex;
+        flex: 1;
+        padding: 1rem;
+        gap: 1rem;
+
+      }
+      /* content section  */
+      .content{
+        flex: 3;
+        background-color: #333;
+        background-color: #e3e4e8;
+        padding: 1rem;
+      }
+      /* side bar  */
+      .sidebar{
+        flex: 1;
+        background-color: #c8c9cc;
+        padding: 1rem;
+      }
+      /* footer  */
+      .footer{
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+        margin-top: auto;
+      }
+      /* resoponsive layout for smaller screen  */
+@media(max-width: 768px){
+  .main-content{
+    flex-direction: column;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">header</header>
+    <div class="main-content">
+      <section class="content">content</section>
+      <aside class="sidebar">sidebar</aside>
+    </div>
+    <footer class="footer">footer</footer>
+  </div>
+
+</body>
+</html>
